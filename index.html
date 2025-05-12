@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="solving">
+    <div id="ctrl">
+        <div class="mode-switch">
+            <button onclick="window.location.href='/competitive'" class="btn btn-mode">
+                Switch to Competitive
+            </button>
+        </div>
+        <h2>Maze Controls</h2>
+        <button id="gen" class="btn btn-primary">Generate Maze</button>
+        <button id="clear" class="btn">Clear Maze</button>
+        <button id="edit" class="btn">Edit Maze</button>
+        <button id="placeCoins" class="btn">Place Coins</button>
+        <button id="setpoints" class="btn">Set Start/Goal</button>
+        <button id="runAst" class="btn btn-blue">Run A*</button>
+        <button id="runBfs" class="btn btn-orange">Run BFS</button>
+        <button id="runLrta" class="btn btn-purple">Run LRTA*</button>
+        <button id="runDfs" class="btn btn-green">Run Online DFS</button>
+        <button id="runDijkstra" class="btn btn-cyan">Run Dijkstra</button>
+        <button id="runBinary" class="btn btn-teal">Run Binary Backtracking</button>
+        <button id="runBidirectional" class="btn btn-red">Run Bidirectional Search</button>
+        <div id="status">Ready</div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

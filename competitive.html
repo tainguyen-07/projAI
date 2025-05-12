@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solving Solo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="competitive">
+    <div id="ctrl">
+        <div class="mode-switch">
+            <button onclick="window.location.href='/'" class="btn btn-mode">
+                Switch to Solving
+            </button>
+        </div>
+        <h2>Competitive Mode</h2>
+        <div class="agent-section">
+            <div class="agent-panel">
+                <h3>Agent 1</h3>
+                <select id="algo1" class="algo-select">
+                    <option value="astar">A* Algorithm</option>
+                    <option value="bfs">BFS Algorithm</option>
+                    <option value="lrta">LRTA* Algorithm</option>
+                    <option value="onlinedfs">Online DFS</option>
+                    <option value="dijkstra">Dijkstra Algorithm</option>
+                    <option value="binary">Binary Backtracking</option>
+                    <option value="bidirectional">Bidirectional Search</option>
+                </select>
+            </div>
+            
+            <div class="agent-panel">
+                <h3>Agent 2</h3>
+                <select id="algo2" class="algo-select">
+                    <option value="astar">A* Algorithm</option>
+                    <option value="bfs">BFS Algorithm</option>
+                    <option value="lrta">LRTA* Algorithm</option>
+                    <option value="onlinedfs">Online DFS</option>
+                    <option value="dijkstra">Dijkstra Algorithm</option>
+                    <option value="binary">Binary Backtracking</option>
+                    <option value="bidirectional">Bidirectional Search</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-buttons">
+            <button id="gen" class="btn btn-primary">Generate Maze</button>
+            <button id="clear" class="btn">Clear Maze</button>
+            <button id="edit" class="btn">Edit Maze</button>
+            <button id="placeCoins" class="btn">Place Coins</button>
+            <button id="setStartPoints1" class="btn">Set Start Points 1</button>
+            <button id="setStartPoints2" class="btn">Set Start Points 2</button>
+            <button id="setGoal" class="btn">Set Goal</button>
+            <button id="startCompetition" class="btn btn-compete">Start Competition</button>
+        </div>
+
+        <div id="winner-display" class="winner-hidden">
+            <h3>Winner:</h3>
+            <span id="winner-text"></span>
+        </div>
+
+        <div id="status">Ready</div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="competitive.js"></script>
+</body>
+</html>
