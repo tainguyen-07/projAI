@@ -282,3 +282,5 @@ def serve_competitive():
 def generate(req: dict):
     grid = generate_random_maze(ROWS, COLS)
     return {"rows": ROWS, "cols": COLS, "grid": grid}
+
+#change nodejs version
